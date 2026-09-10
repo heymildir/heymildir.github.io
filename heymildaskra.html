@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heymildaskrá</title>
+</head>
+
+<body onLoad="codeAddress()">
+
+<div id="headder">
+	<h1>Heymildaskrá</h1>
+	<h4>MENN2so05(2). Elías Sebastían Þorsteinsson og Matthildur Röfn Jónsdóttir</h4>
+	<hr/>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Glærusíning')" id="defaultOpen">Glærusíning</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+
+<div id="Glærusíning" class="tabcontent">
+  <h3>Glærusíning</h3>
+  <a href="https://artsandculture.google.com/usergallery/mgLy8G7MDygDKw" target=blank>https://artsandculture.google.com/usergallery/mgLy8G7MDygDKw</a>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</script>
+</body>
+</html>
+
+
+

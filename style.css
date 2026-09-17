@@ -1,7 +1,6 @@
 
 #button1, #button2 {
    display: inline-block;
-   /* additional code */
 }
 
 a {
@@ -13,4 +12,9 @@ a:hover {
     color:#00A0C6; 
     text-decoration:none; 
     cursor:pointer;  
+}
+
+
+body {
+  font-family: Algerian;
 }
